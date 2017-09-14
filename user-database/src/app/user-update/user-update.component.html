@@ -1,0 +1,20 @@
+<div class="content">
+  <div *ngIf="user">
+    <h3>EDIT DETAILS</h3>
+    <div class="form-group">
+      <label for="name">Name : </label>
+      <input class="form-control" id="name" [(ngModel)]="user.name" placeholder="name"><br>
+    </div>
+    <div class="form-group">
+      <label for="email">Email : </label>
+      <input class="form-control" id="email" [(ngModel)]="user.email" placeholder="email"><br>
+    </div>
+    <div class="form-group">
+      <label for="city">City : </label>
+      <input class="form-control" id="city" [(ngModel)]="user.city" placeholder="city"><br>
+    </div>
+
+    <button class="btn btn-md btn-primary" (click)="save()">SAVE</button>
+
+  </div>
+</div>
